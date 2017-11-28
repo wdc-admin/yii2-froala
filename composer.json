@@ -1,0 +1,21 @@
+{
+  "name": "yii2gurtam/froala",
+  "description": "Yii2 froala widget",
+  "version": "0.1.0",
+  "keywords": ["yii2", "froala", "yii2-widget"],
+  "type": "yii2-extension",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Yuri Laptev",
+      "email": "yula@gurtam.com"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "~2.0.0",
+    "froala/yii2-froala-editor": "~2.6.0"
+  },
+  "autoload": {
+    "psr-4": { "yii2gurtam\\froala\\": "src/" }
+  }
+}

@@ -21,6 +21,9 @@ or add
 
 to the require section of your `composer.json` file.
 
+After need add to depends in global assets
+'yii2gurtam\froala\FroalaAsset'
+
 **Example**
 
 ```

@@ -1,7 +1,7 @@
 {
   "name": "yii2gurtam/froala",
   "description": "Yii2 froala widget",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "keywords": ["yii2", "froala", "yii2-widget"],
   "type": "yii2-extension",
   "license": "BSD-3-Clause",

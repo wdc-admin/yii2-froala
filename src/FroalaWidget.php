@@ -38,6 +38,8 @@ class FroalaWidget extends \froala\froalaeditor\FroalaEditorWidget
 
     public $csrfDefault = false;
 
+    public $csrfDefaultParam = '_csrf';
+
     public $eventsDefault = false;
 
     protected $templates;
@@ -130,7 +132,7 @@ class FroalaWidget extends \froala\froalaeditor\FroalaEditorWidget
             $this->clientOptions[$option] = [];
         }
 
-        $this->clientOptions[$option]['_csrf'] = $this->csrfCookieParam;
+        $this->clientOptions[$option][$this->csrfDefaultParam] = $this->csrfCookieParam;
     }
 
     public function registerClientScript()

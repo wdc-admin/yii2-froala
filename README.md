@@ -30,6 +30,7 @@ After need add to depends in global assets
 <?= $form->field($model, 'text')
         ->widget(\yii2gurtam\froala\FroalaWidget::class, [
             'csrfDefault' => true,
+            'csrfDefaultParam' => '_csrf', //default
             'template' => 'comment',
             'enableToolbarButtons' => [
                 'insertImage',

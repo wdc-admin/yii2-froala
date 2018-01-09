@@ -122,9 +122,9 @@ class PageController extends Controller
 ```
 
 
-Need to add a param for FroalaEditorWidget
+Need to add a param for FroalaWidget
 ```php
-<?= $form->field($model, 'comment')->widget(FroalaEditorWidget::class, [
+<?= $form->field($model, 'comment')->widget(FroalaWidget::class, [
     'clientOptions' => [
         //...
         'imageUploadURL' => \yii\helpers\Url::to(['froala-upload']),

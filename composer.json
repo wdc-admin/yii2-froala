@@ -9,7 +9,7 @@
     "upload",
     "froala"
   ],
-  "homepage": "https://github.com/wdc-admin/yii2-froala-file-upload-module",
+  "homepage": "https://github.com/wdc-admin/yii2-froala",
   "type": "yii2-extension",
   "license": "BSD-3-Clause",
   "authors": [
@@ -26,15 +26,8 @@
       "email": "dmim@gurtam.com"
     }
   ],
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/wdc-admin/yii2-froala-file-upload-module.git"
-    }
-  ],
   "require": {
     "yiisoft/yii2": "~2.0.0",
-    "bower-asset/blueimp-file-upload": "9.*",
     "froala/yii2-froala-editor": "~2.6.0"
   },
   "autoload": {
@@ -44,8 +37,8 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-master": "0.1.2"
+      "dev-master": "0.1.3"
     }
   },
-  "minimum-stability":"stable"
+  "minimum-stability": "stable"
 }

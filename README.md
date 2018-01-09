@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist gurtam/yii2froala "*"
+php composer.phar require --prefer-dist gurtam/yii2-froala "*"
 ```
 
 or add
 
 ```
-"gurtam/yii2froala": "*"
+"gurtam/yii2-froala": "*"
 ```
 
 to the require section of your `composer.json` file.

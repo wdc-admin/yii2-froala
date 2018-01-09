@@ -26,7 +26,7 @@ use yii\web\UploadedFile;
  * {
  *     return [
  *         'froala-upload' => [
- *             'class' => 'wdc\fileUpload\actions\FroalaUploadAction',
+ *             'class' => 'gurtam\yii2Froala\actions\FroalaUploadAction',
  *             'url' => '/statics',
  *             'path' => '@webroot/statics',
  *             'uploadOnlyImage' => false,

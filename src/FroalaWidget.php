@@ -1,6 +1,6 @@
 <?php
 
-namespace yii2gurtam\froala;
+namespace gurtam\yii2Froala;
 
 use Yii;
 use yii\log\EmailTarget;

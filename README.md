@@ -10,25 +10,25 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist yii2gurtam/froala "*"
+php composer.phar require --prefer-dist gurtam/yii2froala "*"
 ```
 
 or add
 
 ```
-"yii2gurtam/froala": "*"
+"gurtam/yii2froala": "*"
 ```
 
 to the require section of your `composer.json` file.
 
 After need add to depends in global assets
-'yii2gurtam\froala\FroalaAsset'
+'gurtam\yii2froala\FroalaAsset'
 
 **Example**
 
 ```
 <?= $form->field($model, 'text')
-        ->widget(\yii2gurtam\froala\FroalaWidget::class, [
+        ->widget(\gurtam\yii2Froala\FroalaWidget::class, [
             'csrfDefault' => true,
             'csrfDefaultParam' => '_csrf', //default
             'template' => 'comment',
@@ -85,4 +85,52 @@ After need add to depends in global assets
             ],
         ]
     ]
+```
+Basic usage upload files:
+------
+
+Add path aliases and url to your file store in the main config
+```php
+return [
+    'aliases' => [
+        '@storagePath' => '/path/to/upload/dir',
+        '@storageUrl' => '/url/to/upload/dir',
+    ],
+];
+```
+
+Add action to the main controller
+```php
+use gurtam\yii2Froala\actions\FroalaUploadAction;
+ 
+class PageController extends Controller
+{
+    public function actions()
+    {
+        return [
+            'upload' => [
+                'class' => FroalaUploadAction::className(),
+                'path' => Event::getUploadDir(), //path to uploads
+                'url' => Event::getUploadUrl(), //url path for get files
+                //'uploadOnlyImage' => false,
+            ],
+        ];
+    }
+    
+    // ...
+}
+```
+
+
+Need to add a param for FroalaEditorWidget
+```php
+<?= $form->field($model, 'comment')->widget(FroalaEditorWidget::class, [
+    'clientOptions' => [
+        //...
+        'imageUploadURL' => \yii\helpers\Url::to(['froala-upload']),
+        //..
+    ]
+])?>
+
+
 ```

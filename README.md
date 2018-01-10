@@ -22,7 +22,7 @@ or add
 to the require section of your `composer.json` file.
 
 After need add to depends in global assets
-'gurtam\yii2froala\FroalaAsset'
+'gurtam\yii2Froala\FroalaAsset'
 
 **Example**
 
